@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Werter.Problems.Solutions",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werter.Problems.Tdd", "Werter.Problems.Tdd\Werter.Problems.Tdd.csproj", "{B49ABDB2-96BE-4FA5-B51F-F0D3F1F216A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werter.Problems.Rascunhos", "Werter.Problems.Rascunhos\Werter.Problems.Rascunhos.csproj", "{206BD87D-B268-4A6F-85AE-F581AB2E00DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B49ABDB2-96BE-4FA5-B51F-F0D3F1F216A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B49ABDB2-96BE-4FA5-B51F-F0D3F1F216A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B49ABDB2-96BE-4FA5-B51F-F0D3F1F216A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206BD87D-B268-4A6F-85AE-F581AB2E00DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206BD87D-B268-4A6F-85AE-F581AB2E00DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206BD87D-B268-4A6F-85AE-F581AB2E00DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206BD87D-B268-4A6F-85AE-F581AB2E00DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

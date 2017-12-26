@@ -13,28 +13,7 @@ namespace Werter.Problems.Tdd.Iniciante
             return new AvaliadorJokenpo(jogadaDoDodo, jogadaDoLeo, jogadaDoPepper);
         }
 
-        [TestMethod]
-        public void DeveRetornarUmEmpatePara3JogadasDiferentes()
-        {
-            var avaliadorJokenpo = new AvaliadorJokenpo(
-                Jokenpo.Papel, Jokenpo.Pedra, Jokenpo.Tesoura
-                );
-
-            avaliadorJokenpo.OuveEmpate()
-                .Should().BeTrue();
-        }
-
-        [TestMethod]
-        public void DeveRetornarUmEmpatePara3Iguais()
-        {
-            var avaliadorJokenpo = new AvaliadorJokenpo(
-                Jokenpo.Papel, Jokenpo.Papel, Jokenpo.Papel
-                );
-
-            avaliadorJokenpo.OuveEmpate()
-                .Should().BeTrue();
-        }
-
+        
         [TestMethod]
         public void DeveRetornarPapelParaDuasPedraEUmPapel()
         {
@@ -62,7 +41,7 @@ namespace Werter.Problems.Tdd.Iniciante
         [TestMethod]
         public void DeveExtrairJogadasDaString()
         {
-            var jogadas = "pedra, papel, tesoura";
+            var jogadas = "pedra papel tesoura";
             new ExtratorDeJogadas()
                 .Extrair(jogadas)
                 .Should()
@@ -79,7 +58,7 @@ namespace Werter.Problems.Tdd.Iniciante
         public void DeveRetornarOTextoDoDodo()
         {
             new Jogo()
-                .Jogar("pedra, tesoura, tesoura")
+                .Jogar("pedra tesoura tesoura")
                 .Should()
                 .BeEquivalentTo(TEXTO_VITORIA_DO_DODO);
         }
@@ -88,7 +67,7 @@ namespace Werter.Problems.Tdd.Iniciante
         public void DeveRetornarOTextoDoLeo()
         {
             new Jogo()
-                .Jogar("papel, tesoura, papel")
+                .Jogar("papel tesoura papel")
                 .Should()
                 .BeEquivalentTo(TEXTO_VITORIA_DO_LEO);
         }
@@ -97,7 +76,7 @@ namespace Werter.Problems.Tdd.Iniciante
         public void DeveRetornarOTextoDoPepper()
         {
             new Jogo()
-                .Jogar("pedra, pedra, papel")
+                .Jogar("pedra pedra papel")
                 .Should()
                 .BeEquivalentTo(TEXTO_VITORIA_DO_PEPPER);
         }
@@ -106,7 +85,7 @@ namespace Werter.Problems.Tdd.Iniciante
         public void DeveRetornarOTextoDeEmpate()
         {
             new Jogo()
-                .Jogar("pedra, papel, tesoura")
+                .Jogar("pedra papel tesoura")
                 .Should()
                 .BeEquivalentTo(TEXTO_EMPATE);
         }

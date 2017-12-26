@@ -1,7 +1,6 @@
 ﻿namespace Werter.Problems.Solutions.Iniciante
 {
     using System;
-    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -59,7 +58,7 @@
         {
             public IList<Jokenpo> Extrair(string entrada)
             {
-                var jogadas = entrada.Split(',')
+                var jogadas = entrada.Split(' ')
                     .Select(x => ConverterParaJokenpo(x))
                     .ToList();
 
