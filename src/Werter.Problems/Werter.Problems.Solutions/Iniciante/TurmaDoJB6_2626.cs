@@ -21,11 +21,11 @@
 
 
         public class Jogo
-        {
+        {            
             private IList<Jogador> _jogadores = new List<Jogador>();
 
             public string Jogar()
-            {
+            {                
                 var entrada = Console.ReadLine();
                 return Jogar(entrada);
             }

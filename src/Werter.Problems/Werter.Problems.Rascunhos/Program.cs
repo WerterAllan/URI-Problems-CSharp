@@ -1,11 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using static Werter.Problems.Solutions.Iniciante.Celulas_1018;
 
 class URI
 {
 
     static void Main(string[] args)
+    {
+        //ExecutarJokenpo();
+        ExecutarCelular();
+
+        Console.ReadKey();
+
+    }
+
+    private static void ExecutarCelular()
+    {
+        //var valor = decimal.Parse(Console.ReadLine());
+
+        new CaixaEletronico()
+            .MostrarNotas(11257);
+    }
+
+    private static void ExecutarJokenpo()
     {
         do
         {
@@ -15,9 +33,6 @@ class URI
             Console.WriteLine(textoVencedor);
             Console.ReadKey();
         } while (Console.ReadLine() != "0");
-
-
-
     }
 
     public const string TEXTO_VITORIA_DO_DODO = "Os atributos dos monstros vao ser inteligencia, sabedoria...";
